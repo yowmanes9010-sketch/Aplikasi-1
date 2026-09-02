@@ -1,0 +1,8 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amadeus Absensi</title><link rel="stylesheet" href="style.css"></head><body><main>
+<section id="auth" class="card"><h1>Amadeus Absensi</h1><p>Selfie + GPS + waktu server.</p>
+<div id="login"><input id="email" type="email" placeholder="Email"><input id="password" type="password" placeholder="Password"><button onclick="login()">Masuk</button><button class="secondary" onclick="toggle(true)">Daftar</button></div>
+<div id="register" hidden><input id="name" placeholder="Nama lengkap"><input id="re" type="email" placeholder="Email"><input id="rp" type="password" placeholder="Password minimal 6 karakter"><button onclick="register()">Buat akun</button><button class="secondary" onclick="toggle(false)">Kembali</button></div><p id="msg"></p></section>
+<section id="panel" class="card" hidden><div class="head"><h2 id="welcome"></h2><button class="secondary" onclick="logout()">Keluar</button></div>
+<video id="video" autoplay playsinline></video><canvas id="canvas" hidden></canvas><div class="info">📍 <span id="location">Memeriksa GPS…</span></div>
+<div class="buttons"><button onclick="submitAttendance('in')">📸 Absen Masuk</button><button onclick="submitAttendance('out')">🏁 Absen Pulang</button></div>
+<h3>Riwayat Absensi</h3><div id="history"></div></section></main><script src="config.js"></script><script src="app.js"></script></body></html>
